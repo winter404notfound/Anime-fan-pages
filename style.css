@@ -1,0 +1,165 @@
+:root {
+    --primary-color: rgb(255, 0, 157);
+}
+@font-face {
+    font-family: "Softsoul";
+    src: url("./Custom%20Fonts/softsoul_copyfonts.com.ttf") format("truetype");
+    font-weight: bold;
+    font-style: normal;
+}
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Noto Sans", sans-serif;
+}
+/* Navigation bar */
+.logo {
+    font-size: 50px;
+    font-family: "Softsoul", sans-serif;
+    color: #E5004F;
+    font-style: italic;
+    font-weight: 200px;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: white;
+    white-space: nowrap;
+    margin-right: 50px;
+}
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--primary-color);
+    
+}
+.nav-link {
+    display: flex;
+    width: 100%;
+    list-style: none;
+}
+.navbar a {
+    font-size: 1em;
+    display: block;
+    color: white;
+    text-decoration: none;
+    padding: 20px;
+    border-radius: 10px;
+    margin:10px;
+}
+.navbar a:hover {
+    background-color: rgb(111, 3, 69);
+    transition: background-color 0.2s;
+}
+/* Spacing between section */
+body {
+    background-image: url("https://i.bandori.party/u/c/art/a/5009Anon-Chihaya-Happy-Wake-Up-Yawn-Time-wTaGpY.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+h2 {
+    font-size: 30px;
+    margin-top: 1.5rem;
+    color: var(--primary-color);
+    font-family: "Softsoul", sans-serif;
+}
+p {
+    margin-bottom: 1rem;
+    color: white;
+}
+main {
+    display:flex;
+    justify-content: center;
+}
+.outer.most.container {
+    margin: 20px;
+    border: 1px solid var(--primary-color);
+    border-radius: 20px;
+    width: 80%;
+    padding: 20px;
+    line-height: 1.6;
+    background: rgba(0, 0, 100, 0.5);
+    box-shadow: 0 4px 10px rgba(255, 0, 157, 1);
+}
+.rainbow-line {
+    border: none;
+    height: 2px;
+    background: linear-gradient(
+        90deg,
+        red,
+        orange,
+        yellow,
+        green,
+        cyan,
+        blue,
+        violet
+    );
+}
+.about-image {
+    float: right;
+    width: 180px;
+    margin-left: 40px;
+    margin-bottom: 40px;
+    border-radius: 20px;
+    transition: transform 0.3s ease;
+}
+.about-image:hover {
+    transform: scale(1.2);
+}
+.about::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+.apperance-image {
+    float:right;
+    width: 400px;
+    margin-top: -70px;
+    transition: transform 0.3s ease;
+}
+.apperance-image:hover {
+    transform: scale(1.2);
+}
+.apperance::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+.decoration {
+    margin-top: -100px;
+    margin-bottom: -70px;
+}
+.decoration.bandlogo {
+    margin-left: 700px;
+}
+.decoration.signature {
+    margin-bottom: -1px;
+    margin-left: 600px;
+}
+.footer {
+    margin-top: 2rem;
+    padding: 20px;
+
+    background-color: rgba(0, 0, 0, 0.7);
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    color: white;
+}
+
+.footer-links {
+    display: flex;
+    gap: 20px;
+}
+
+.footer-links a {
+    color: white;
+    text-decoration: none;
+}
+
+.footer-links a:hover {
+    color: var(--primary-color);
+}
+
