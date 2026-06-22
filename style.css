@@ -55,8 +55,9 @@
 body {
     background-image: url("https://i.bandori.party/u/c/art/a/5009Anon-Chihaya-Happy-Wake-Up-Yawn-Time-wTaGpY.png");
     background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
+    background-position: center top -100px;
+    background-size: 100%;
+    background-attachment: fixed;
 }
 h2 {
     font-size: 30px;
@@ -80,6 +81,7 @@ main {
     line-height: 1.6;
     background: rgba(0, 0, 100, 0.5);
     box-shadow: 0 4px 10px rgba(255, 0, 157, 1);
+    padding-bottom: 200px;
 }
 .rainbow-line {
     border: none;
@@ -140,7 +142,10 @@ main {
     margin-left: 600px;
 }
 .footer {
-    margin-top: 2rem;
+    position: static;
+    left: 0;
+    bottom: 0;
+    width: 100%;
     padding: 20px;
     background-color: rgba(0, 0, 0, 0.7);
     display: flex;

@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chihaya Anon - Comments</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Libre+Baskerville:ital,wght@0,400..700;1,400..700&family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Libre+Baskerville:ital,wght@0,400..700;1,400..700&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Sansita:ital,wght@0,400;0,700;0,800;0,900;1,400;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <style>
+        .banGdream-font {
+            font-size: 60px;
+            font-family: "Softsoul", sans-serif;
+            color: #E5004F;
+            -webkit-text-stroke-width: 1px;
+            -webkit-text-stroke-color: white;
+        }
+        .comment {
+            padding: 15px;
+            transition: all 0.3s ease;
+        }
+        .fade-in {animation: fadeIn 0.5s ease;}
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(-20px);}
+            to {
+                opacity: 1;
+                transform: translateY(0);}}
+        .comment-poster {
+            display: flex;
+            flex-direction: column;
+            gap: 5px;
+        }
+        .comment-block {
+            font-size: 20px;
+            border-radius: 10px;
+            border: #E5004F solid 2px;
+            background-color: rgba(255, 255, 255, 0.5);
+            padding: 10px;
+        }
+        button {
+            border: #E5004F solid 2px;
+            background-color: rgba(255, 255, 255, 0.5);
+            border-radius: 10px;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <!-- Navigation-->
+        <nav class="navbar">
+            <h1 class="logo">Chihaya Anon</h1>
+            <ul class="nav-link">
+                <li><a href="./index.html">About</a></li>
+                <li><a href="./gallery.html">Official gallery</a></li>
+                <li><a href="./video.html">Video</a></li>
+                <li><a href="./gifs.html">Gifs</a></li>
+                <li><a href="./comments.html">Comments</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="outer most container">
+            <h1 class="banGdream-font" style="text-align: center;">Comments section</h1>
+            <section class="rules">
+                <p>Hello vistor, if you have a thought about Chihaya Anon or the website in general, then you can share your it with everyone in the comment section below!</p>
+                <p>Be sure to be polite and kind to everyone!</p>
+            </section>
+            <hr class="rainbow-line"/>
+            <section class="comments">
+                <div class="comment-poster">
+                    <h2>Comments</h2>
+                    <input id="name" class="comment-block" placeholder=" Your name" style="max-width: 200px;">
+                    <textarea id="comment" class="comment-block" placeholder=" Write a comment" style="max-width: 500px;"></textarea>
+                    <button onclick="addComment()" style="max-width: 100px;">Post</button>
+                </div>
+                <div id="commentList"></div>
+                <button id="loadMoreBtn" onclick="loadMoreComments()">
+                    Load More
+                </button>
+            </section>
+        </div>
+    </main>
+    <footer class="footer">
+        <p>&copy; 2026 Chihaya Anon Fan Page</p>
+        <div class="footer-links">
+            <a href="#">YouTube</a>
+            <a href="#">Discord</a>
+            <a href="#">GitHub</a>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
