@@ -12,6 +12,7 @@
     margin: 0;
     box-sizing: border-box;
     font-family: "Noto Sans", sans-serif;
+    color: white;
 }
 /* Navigation bar */
 .logo {
@@ -41,7 +42,6 @@
 .navbar a {
     font-size: 1em;
     display: block;
-    color: white;
     text-decoration: none;
     padding: 20px;
     border-radius: 10px;
@@ -66,7 +66,6 @@ h2 {
 }
 p {
     margin-bottom: 1rem;
-    color: white;
 }
 main {
     display:flex;
@@ -101,10 +100,13 @@ main {
     width: 180px;
     margin-left: 40px;
     margin-bottom: 40px;
+}
+.about-image img {
+    width: 100%;
     border-radius: 20px;
     transition: transform 0.3s ease;
 }
-.about-image:hover {
+.about-image img:hover {
     transform: scale(1.2);
 }
 .about::after {
@@ -140,26 +142,18 @@ main {
 .footer {
     margin-top: 2rem;
     padding: 20px;
-
     background-color: rgba(0, 0, 0, 0.7);
-
     display: flex;
     justify-content: space-between;
     align-items: center;
-
-    color: white;
 }
-
 .footer-links {
     display: flex;
     gap: 20px;
 }
-
 .footer-links a {
-    color: white;
     text-decoration: none;
 }
-
 .footer-links a:hover {
     color: var(--primary-color);
 }
