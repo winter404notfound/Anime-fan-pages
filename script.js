@@ -79,4 +79,22 @@ function loadMoreComments() {
     visibleComments += COMMENTS_PER_LOAD;
     displayComments();
 }
+function createPetal() {
+    const petal = document.createElement("div");
+    petal.classList.add("petal");
+    petal.style.left = Math.random() * window.innerWidth + "px";
+    petal.style.animationDuration =
+        5 + Math.random() * 5 + "s";
+    petal.style.opacity =
+        0.4 + Math.random() * 0.6;
+    petal.style.transform =
+        `scale(${0.5 + Math.random()})`;
+    document
+        .getElementById("petals")
+        .appendChild(petal);
+    setTimeout(() => {
+        petal.remove();
+    }, 10000);
+}
+setInterval(createPetal, 700);
 displayComments();

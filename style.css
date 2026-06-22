@@ -130,12 +130,10 @@ main {
     display: block;
     clear: both;
 }
-.decoration {
-    margin-top: -100px;
-    margin-bottom: -70px;
-}
 .decoration.bandlogo {
+    position: absolute;
     margin-left: 700px;
+    margin-top: -150px;
 }
 .decoration.signature {
     margin-bottom: -1px;
@@ -162,4 +160,32 @@ main {
 .footer-links a:hover {
     color: var(--primary-color);
 }
-
+/* Sakura effect */
+#petals {
+    position: fixed;
+    inset: 0;
+    pointer-events: none;
+    overflow: hidden;
+    z-index: 999;
+}
+.petal {
+    position: absolute;
+    top: -50px;
+    width: 20px;
+    height: 15px;
+    background: pink;
+    border-radius: 70% 30% 70% 30%;
+    opacity: 0.8;
+    animation: fall linear forwards;
+}
+@keyframes fall {
+    from {
+        transform: translateY(0) rotate(0deg);
+    }
+    to {
+        transform:
+            translateY(110vh)
+            translateX(100px)
+            rotate(360deg);
+    }
+}
