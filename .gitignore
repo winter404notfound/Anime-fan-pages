@@ -1,0 +1,18 @@
+# IntelliJ / JetBrains
+.idea/
+
+# VS Code
+.vscode/
+
+# Java
+target/
+build/
+out/
+*.class
+
+# Logs
+*.log
+
+# OS files
+Thumbs.db
+.DS_Store
